@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
-    <title>cadastrar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discussões</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -30,22 +30,23 @@
 	<script type="text/javascript" src="../static/js/jquery.min.js"></script>
 	<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../static/js/scripts.js"></script>
-
-
 </head>
+
 <body>
 <div class="container">
+	<div class="row clearfix">
 
-    <div class="col-md-10 column">
+		<div class="col-md-10 column">
 			<ul class="nav nav-tabs">
 				<li>
 					<a href="/home/index">HOME</a>
 				</li>
-				<li>
+				<li class="active">
 					<a href="/forum/forum">FORUM</a>
 				</li>
 				<li>
 					<a href="/info/info">INFO</a>
+
 				</li>
 				<li>
 					<a href="/rank/rank">RANK</a>
@@ -55,29 +56,31 @@
 				</li>
 
 			</ul>
+		</div>
 	</div>
-
-    <!-- ESPAÇO ENTRE O MENU E O CADASTRO -->
-    <br></br><br></br><br></br><br></br>
-
+    </br> </br> </br>
+<div class="container">
 	<div class="row clearfix">
-		<div class="col-md-2 column">
-		</div>
-		<div class="col-md-6 column">
-			<form role="form">
-                <div class="form-group">
-					<label for="Login"> Login</label><input type="text" class="form-control" id="Login" />
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-2 column">
+					<img alt="140x140" src="http://imageshack.com/a/img199/3711/1xcq.jpg" />
 				</div>
-				<div class="form-group">
-					 <label for="exampleInputPassword1">Senha</label><input type="password" class="form-control" id="exampleInputPassword1" />
+				<div class="col-md-10 column">
+					 <a href="/forum/discussoes" class="btn btn-danger btn-lg btn-block" type="button">Discussões</a>
+                    </br>
+                    <a href="#" class="btn btn-info btn-sm" type="button">Novo Tópico</a>
+                    <a href="#" class="btn btn-xs btn-block btn-success" type="button">Panelinha ta fød@</a>
+                     <a href="#" class="btn btn-xs btn-block btn-success" type="button">Alteração nas classes</a>
+                     <a href="#" class="btn btn-xs btn-block btn-success" type="button">A tua piscina esta cheia de ratos</a>
+
+                    </br></br></br></br></br></br></br>
+                    <a href="/forum/design" class="btn btn-warning btn-lg btn-block" type="button">Designs</a>
+                    <a href="/forum/tutoriais" class="btn btn-info btn-lg btn-block" type="button">Tutoriais</a>
 				</div>
-                <div class="form-group">
-					 <label for="E-Mail">E-Mail</label><input type="email" class="form-control" id="E-Mail" />
-				</div>
-				<button type="submit" class="btn btn-default">Confirmar</button>
-			</form>
-		</div>
-		<div class="col-md-4 column">
+
+
+			</div>
 		</div>
 	</div>
 </div>
