@@ -63,6 +63,7 @@
 	<div class="row clearfix">
 		<div class="col-md-2 column">
 			<form role="form">
+
 				<div class="form-group">
 					 <label for="exampleInputEmail1">Login</label><input class="form-control" id="exampleInputEmail1" type="email">
 				</div>
@@ -73,7 +74,13 @@
 				<div class="checkbox">
 					 <label><input type="checkbox"> Usar este login como padrão</label>
 				</div>
-                <a href="/pvpscore/pvpscore" class="btn btn-default">Entrar</a>
+                {%  if _usuario_logado %}
+                    <a href="{{  _logout_url }}" class="btn btn-default">({{ _usuario_logado.nome }}) Sair </a>
+                {% else %}
+                   <a href="{{  _login_url }}" class="btn btn-default">Login com Google</a>
+                {% endif %}
+                <!--<a href="/pvpscore/pvpscore" class="btn btn-default">Entrar</a >-->
+
                 <a  href="/cadastrar/cadastrar" class="btn btn-default">Cadastrar</a>
 			</form>
 		</div>
@@ -99,7 +106,7 @@
 			</h2>
 			<p>
 				O projeto está em desenvolvimento, caso queira contribuir, favor utilizar https://github.com/Bilzera/willianscript ou mande um email
-				para willian.augusto.campos@gmail.com
+				para willian.augusto.campos@gmail.com.
 			</p>
 
 			
